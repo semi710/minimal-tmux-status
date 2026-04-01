@@ -53,7 +53,7 @@ justify=$(get_tmux_option "@minimal-tmux-justify" "centre")
 
 indicator_state=$(get_tmux_option "@minimal-tmux-indicator" true)
 indicator_str=$(get_tmux_option "@minimal-tmux-indicator-str" " tmux ")
-indicator=$("$indicator_state" && echo " $indicator_str ")
+indicator=$("$indicator_state" && echo "$indicator_str")
 
 right_state=$(get_tmux_option "@minimal-tmux-right" true)
 left_state=$(get_tmux_option "@minimal-tmux-left" true)
