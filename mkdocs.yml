@@ -1,0 +1,70 @@
+site_name: minimal-tmux-status
+site_url: https://mtmux.semi.sh
+site_description: Minimal tmux status bar plugin with prefix key indicator
+site_author: Nikhil Singh
+repo_name: niksingh710/minimal-tmux-status
+repo_url: https://github.com/niksingh710/minimal-tmux-status
+
+theme:
+  name: material
+  font:
+    text: Sora
+    code: JetBrains Mono
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.tracking
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - scheme: slate
+      primary: deep purple
+      accent: deep orange
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Configuration: configuration.md
+  - Integration: integration.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/niksingh710/minimal-tmux-status
+  generator: false
+
+copyright: 'Made with <span style="color: #ff6e40">&hearts;</span> by Nikhil · <a href="https://semi.sh">semi.sh</a>'
