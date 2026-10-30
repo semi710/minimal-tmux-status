@@ -71,6 +71,7 @@ show_expanded_icon_for_all_tabs=$(get_tmux_option "@minimal-tmux-show-expanded-i
 # Setting the options in tmux
 tmux set-option -g status-position "$status"
 tmux set-option -g status-style bg=default,fg=default
+tmux set-option -g window-status-current-style default
 # falls back to relative centre on tmux < 3.4, which has no absolute-centre
 if ! tmux set-option -g status-justify "$justify" 2>/dev/null; then
   tmux set-option -g status-justify centre
